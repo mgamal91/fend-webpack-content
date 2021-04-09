@@ -5,6 +5,10 @@ module.exports = {
     mode: 'production',
     devtool: 'source-map',
     entry: './src/client/index.js',
+    output: {
+        libraryTarget: 'var',
+        library: 'Client'
+    },
     module: {
         rules: [
                 {
