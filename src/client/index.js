@@ -14,6 +14,6 @@ export {
 
 
 console.log(checkForName);
-
+/* 
 alert("I EXIST");
-alert("memo Hi2_new");
+alert("memo Hi2_new"); */
