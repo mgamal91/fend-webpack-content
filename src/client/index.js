@@ -10,4 +10,4 @@ import './styles/header.scss'
 console.log(checkForName);
 
 alert("I EXIST");
-alert("memo Hi");
+alert("memo Hi2");
