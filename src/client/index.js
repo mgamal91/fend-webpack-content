@@ -9,8 +9,9 @@ import './styles/header.scss'
 export {
     checkForName,
     handleSubmit
-   }
+}
 /* console.log(checkForName);
 
-alert("I EXIST");
+
 alert("memo Hi2"); */
+alert("I EXIST");
