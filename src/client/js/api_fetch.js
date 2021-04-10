@@ -13,7 +13,7 @@ export function fetchAPI(event) {
     
     .then(res => res.json())
     .then(function(res) {
-        console.log(res);
+        console.log(res.base);
         /* test2.innerHTML = res.message */
     })
 }
