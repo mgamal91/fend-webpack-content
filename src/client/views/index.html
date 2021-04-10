@@ -27,14 +27,17 @@
         <main>
             <section>
                 <form class="" onsubmit="return handleSubmit(event)">
-                    <input id="name" type="text" name="input" value="" onblur="onBlur()" placeholder="Name">
+                    <input id="name" type="text" name="input" value="" placeholder="Name">
+                    <input id="memo" type="text" name="input" value=""  placeholder="Memo">
                     <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return handleSubmit(event)">
+                    <input type="submit" name="" value="submit" onclick="return Client.fetchAPI(event)" onsubmit="return fetchAPI(event)">
                 </form>
             </section>
 
             <section>
                 <strong>Form Results:</strong>
                 <div id="results"></div>
+                <div id="resultsAPI">Result</div>
             </section>
         </main>
 

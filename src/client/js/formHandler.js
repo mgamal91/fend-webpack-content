@@ -6,8 +6,7 @@ export function handleSubmit(event) {
     Client.checkForName(formText)
 
     console.log("::: Form Submitted :::")
-    //fetch('http://localhost:8081/test')
-    fetch('api.openweathermap.org/data/2.5/weather?q=London&appid=e52537ee7c988a3d6e76f5cf45bd0583')
+    fetch('http://localhost:8081/test')
     
     .then(res => res.json())
     .then(function(res) {
