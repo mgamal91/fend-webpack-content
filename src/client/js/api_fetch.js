@@ -6,7 +6,8 @@ export function fetchAPI(event) {
     let test2=document.getElementById('resultsAPI');
     let p=document.createElement('p');
     let url='http://api.openweathermap.org/data/2.5/weather?q=London&appid=e52537ee7c988a3d6e76f5cf45bd0583';
-    console.log("::: Fetch API :::")
+    console.log("::: Fetch API :::");
+    console.log(url);
     //fetch('http://localhost:8081/test')
     fetch(url)
     
