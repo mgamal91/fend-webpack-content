@@ -3,7 +3,7 @@ const webpack = require("webpack")
 const HtmlWebpackPlugin=require("html-webpack-plugin");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const TerserPlugin = require("terser-webpack-plugin");
-/* var OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin'); */
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 module.exports = {
     mode: 'production',
     entry: './src/client/index.js',
@@ -12,9 +12,8 @@ module.exports = {
         library: 'Client'
     },
     optimization: {
-        /* minimize: true, */
         minimizer: [new TerserPlugin({}), new OptimizeCSSAssetsPlugin({})],
-      },
+        },
     module: {
         rules: [
                 {
