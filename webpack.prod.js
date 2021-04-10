@@ -6,6 +6,7 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 module.exports = {
     mode: 'production',
+    devtool: 'source-map',
     entry: './src/client/index.js',
     output: {
         libraryTarget: 'var',
