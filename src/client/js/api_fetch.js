@@ -3,7 +3,7 @@ export function fetchAPI(event) {
 
     // check what text was put into the form field
     let formText = document.getElementById('memo').value;
-    let test2=document.getElementById('resultsAPI');
+    let test2=document.getElementById('resultsAPI').value;
     let p=document.createElement('p');
     let url='http://api.openweathermap.org/data/2.5/weather?q=London&appid=e52537ee7c988a3d6e76f5cf45bd0583';
     console.log("::: Fetch API :::");
@@ -13,7 +13,7 @@ export function fetchAPI(event) {
     
     .then(res => res.json())
     .then(function(res) {
-        document.getElementById('resultsAPI').innerHTML = res.message
+        test2.innerHTML = res.message
     })
 }
 
